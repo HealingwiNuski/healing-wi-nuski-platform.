@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healing wi Nuski — Day One</title>
+  <meta name="description" content="Health, discipline, and purpose. Join the Healing wi Nuski movement." />
+  <meta property="og:title" content="Healing wi Nuski — Day One" />
+  <meta property="og:description" content="Health, discipline, and purpose. Join the movement." />
+  <meta name="theme-color" content="#0e1116" />
+  <style>
+    :root{
+      --bg:#0e1116; --card:#151a21; --text:#e9eef5; --muted:#93a0b4; --brand:#7dd3fc; --accent:#34d399;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      color:var(--text); background: radial-gradient(1200px 600px at 20% -10%, #1d2430, transparent),
+                         radial-gradient(900px 500px at 110% 0%, #12202a, transparent),
+                         var(--bg);
+    }
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:24px}
+    .brand{font-weight:800; letter-spacing:.3px; font-size:18px}
+    nav a{color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px}
+    nav a:hover{color:var(--text)}
+    .hero{
+      margin-top:10px; padding:28px; border:1px solid #263041; background:rgba(21,26,33,.6);
+      border-radius:16px; backdrop-filter: blur(6px)
+    }
+    .kicker{color:var(--brand); font-weight:700; font-size:12px; letter-spacing:.24em; text-transform:uppercase}
+    h1{font-size:34px; line-height:1.15; margin:10px 0 8px}
+    p.lead{color:var(--muted); font-size:16px; line-height:1.6; margin:0 0 18px}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin:18px 0 6px}
+    .btn{appearance:none; border:none; padding:12px 16px; border-radius:10px; font-weight:700; cursor:pointer}
+    .btn.primary{background:var(--accent); color:#072015}
+    .btn.ghost{background:transparent; color:var(--brand); border:1px solid #2b394b}
+    .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:18px}
+    .card{
+      background:var(--card); border:1px solid #263041; border-radius:14px; padding:16px; min-height:138px
+    }
+    .card h3{margin:0 0 6px; font-size:18px}
+    .card p{margin:0; color:var(--muted); font-size:14px; line-height:1.5}
+    footer{margin-top:36px; color:#7b879a; font-size:12px}
+    .note{font-size:12px; color:#8aa0b6; margin-top:10px}
+    @media (min-width:800px){ h1{font-size:44px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Healing wi Nuski</div>
+      <nav>
+        <a href="#mission">Mission</a>
+        <a href="#join">Join</a>
+        <a href="#watch">Watch</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="kicker">Day One starts now</div>
+      <h1>Health. Discipline. Purpose.<br/>Build the best version of you.</h1>
+      <p class="lead">This is the official platform hub for Healing wi Nuski. Follow the daily plan, tap into resources, and join the movement — if the Lord wills, we rise together.</p>
+      <div class="cta">
+        <a class="btn primary" id="dailyPlanBtn" href="#mission">View Today’s Plan</a>
+        <a class="btn ghost" href="mailto:contact@example.com?subject=Join%20Healing%20wi%20Nuski">I Want In</a>
+      </div>
+      <div class="note">Replace <code>contact@example.com</code> later with your email.</div>
+    </section>
+
+    <section class="grid" id="mission">
+      <article class="card">
+        <h3>Mission</h3>
+        <p>To heal minds and bodies through clean living, righteous discipline, and daily action — then scale that healing across the world.</p>
+      </article>
+      <article class="card" id="watch">
+        <h3>Watch & Learn</h3>
+        <p>Long‑form YouTube, daily Shorts, TikTok tips, Twitch live sessions. Links coming next.</p>
+      </article>
+      <article class="card" id="join">
+        <h3>Join the Movement</h3>
+        <p>Be early. Volunteer, contribute content, or help build the app. Hit the email button above.</p>
+      </article>
+      <article class="card">
+        <h3>Store (soon)</h3>
+        <p>Healing wi Nuski essentials — clean products, elixirs, sauces, oils, and more.</p>
+      </article>
+    </section>
+
+    <footer>© <span id="y"></span> Healing wi Nuski • Built with love and discipline.</footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
